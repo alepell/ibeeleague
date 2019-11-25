@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <h1>iBeeLeague</h1>
+      <h1>iBeeLeague</h1>     
     </>
   );
 }
