@@ -31,54 +31,108 @@ export default function Home() {
 
       <Container>
         <p>Tag Teams</p>
-        <div id="teambox">
-          <div>
-            <ul>
-              <li><img src="" alt="foto"/></li>
-              <li>Pokemon</li>
-              <li>Pokemon</li>
-              <li>Pokemon</li>
-              <li>Pokemon</li>
-              <li>Pokemon</li>
-              <li>Pokemon</li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li><img src="" alt="foto"/></li>
-              <li>Pokemon</li>
-              <li>Pokemon</li>
-              <li>Pokemon</li>
-              <li>Pokemon</li>
-              <li>Pokemon</li>
-              <li>Pokemon</li>
-            </ul>
-          </div>
-        </div>
-        <div id="teambox">
-          <div>
-            <ul>
-              <li><img src="" alt="foto"/></li>
-              <li>Pokemon</li>
-              <li>Pokemon</li>
-              <li>Pokemon</li>
-              <li>Pokemon</li>
-              <li>Pokemon</li>
-              <li>Pokemon</li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li><img src="" alt="foto"/></li>
-              <li>Pokemon</li>
-              <li>Pokemon</li>
-              <li>Pokemon</li>
-              <li>Pokemon</li>
-              <li>Pokemon</li>
-              <li>Pokemon</li>
-            </ul>
-          </div>
-        </div>
+        {competidores.map(comp => (
+           <div id="containerteam" key={comp.id}>
+           <div id="teambox">
+             <div>
+               <ul>
+                 <li>
+                   <img
+                     id="avatar"
+                     src={comp.avatar.url}
+                     alt={comp.title.rendered}
+                   />
+                 </li>
+                 <li>
+                   <img
+                     src="http://play.pokemonshowdown.com/sprites/ani/altaria.gif"
+                     alt="altaria"
+                   />
+                 </li>
+                 <li>
+                   <img
+                     src="http://play.pokemonshowdown.com/sprites/ani/charizard.gif"
+                     alt="altaria"
+                   />
+                 </li>
+                 <li>
+                   <img
+                     src="http://play.pokemonshowdown.com/sprites/ani/kabutops.gif"
+                     alt="altaria"
+                   />
+                 </li>
+                 <li>
+                   <img
+                     src="http://play.pokemonshowdown.com/sprites/ani/umbreon.gif"
+                     alt="altaria"
+                   />
+                 </li>
+                 <li>
+                   <img
+                     src="http://play.pokemonshowdown.com/sprites/ani/espeon.gif"
+                     alt="altaria"
+                   />
+                 </li>
+                 <li>
+                   <img
+                     src="http://play.pokemonshowdown.com/sprites/ani/snorlax.gif"
+                     alt="altaria"
+                   />
+                 </li>
+               </ul>
+             </div>
+             <div>
+               <ul>
+                 <li>
+                   <img
+                     id="avatar"
+                     src={comp.avatar.url}
+                     alt={comp.title.rendered}
+                   />
+                 </li>
+                 <li>
+                   <img
+                     src={`http://play.pokemonshowdown.com/sprites/ani/${comp.pokemon1}.gif`}
+                     alt="altaria"
+                     
+                   />
+                 </li>
+                 <li>
+                   <img
+                     src={`http://play.pokemonshowdown.com/sprites/ani/${comp.pokemon2}.gif`}
+                     alt="altaria"
+                   />
+                 </li>
+                 <li>
+                   <img
+                     src={`http://play.pokemonshowdown.com/sprites/ani/${comp.pokemon3}.gif`}
+                     alt="altaria"
+                   />
+                 </li>
+                 <li>
+                   <img
+                     src={`http://play.pokemonshowdown.com/sprites/ani/${comp.pokemon4}.gif`}
+                     alt="altaria"
+                   />
+                 </li>
+                 <li>
+                   <img
+                     src={`http://play.pokemonshowdown.com/sprites/ani/${comp.pokemon5}.gif`}
+                     alt="altaria"
+                   />
+                 </li>
+                 <li>
+                   <img
+                     src={`http://play.pokemonshowdown.com/sprites/ani/${comp.pokemon6}.gif`}
+                     alt="altaria"
+                   />
+                 </li>
+               </ul>
+             </div>
+           </div>
+         </div>
+        ))}
+       
       </Container>
     </>
   );

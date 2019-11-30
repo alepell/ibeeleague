@@ -7,9 +7,9 @@ export const Header = styled.header`
   justify-content: space-evenly;
   margin-top: 1%;
   margin-bottom: 2%;
-  
+
   p {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 100;
     margin-left: -13%;
     font-size: 4rem;
@@ -20,18 +20,17 @@ export const Header = styled.header`
     display: flex;
     list-style: none;
     color: #fff;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-weight: 500;
     margin-left: 20%;
-    
-    
 
     li {
       cursor: pointer;
       margin: 10px;
+      transition: all 0.3s ease;
       &:hover {
         color: black;
-        transition: all .3s ease;
+        transition: all 0.3s ease;
       }
     }
   }
@@ -43,16 +42,24 @@ export const Header = styled.header`
 `;
 
 export const Container = styled.div`
-@import url("https://fonts.googleapis.com/css?family=Roboto:100i,500i,900i&display=swap");
-  width: 80%;
-  background: rgba(0,0,0,0.35);
+  @import url("https://fonts.googleapis.com/css?family=Roboto:100i,500i,900i&display=swap");
+  background: rgba(0, 0, 0, 0.35);
   margin: 0 auto;
   border: 3px solid black;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+
+  #containerteam {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   p {
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #fff;
     font-weight: 700;
     font-size: 2rem;
@@ -63,13 +70,23 @@ export const Container = styled.div`
   }
 
   #teambox {
-    
-    background: rgba(255,255,255,0.35);
+    background: rgba(255, 255, 255, 0.35);
     border: 3px solid white;
     border-radius: 5px;
-    margin: 2%;
+    margin: 2% auto;
     display: flex;
     flex-direction: column;
+    width: 60%;
+    img {
+      width: 70px;
+      height: 70px;
+    }
+
+    #avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
 
     ul {
       display: flex;
@@ -82,5 +99,4 @@ export const Container = styled.div`
       }
     }
   }
-
 `;
