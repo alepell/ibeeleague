@@ -9,12 +9,10 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
-  html, body, #root {
+  html, body, #root{
     min-height: 100%;
-  }
-
-  body: {
-    background: #fff;
+    max-width: 100%;
+    background: linear-gradient(to right, #7159c1, #AB59C1) !important;
     -webkit-font-smoothing: antialiased !important;
   }
 
