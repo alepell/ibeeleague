@@ -18,6 +18,7 @@ export default function Home() {
     fetchData();
   }, []);
 
+
   return (
     <>
       <Header>
@@ -32,107 +33,108 @@ export default function Home() {
       <Container>
         <p>Tag Teams</p>
         {competidores.map(comp => (
-           <div id="containerteam" key={comp.id}>
-           <div id="teambox">
-             <div>
-               <ul>
-                 <li>
-                   <img
-                     id="avatar"
-                     src={comp.avatar.url}
-                     alt={comp.title.rendered}
-                   />
-                 </li>
-                 <li>
-                   <img
-                     src="http://play.pokemonshowdown.com/sprites/ani/altaria.gif"
-                     alt="altaria"
-                   />
-                 </li>
-                 <li>
-                   <img
-                     src="http://play.pokemonshowdown.com/sprites/ani/charizard.gif"
-                     alt="altaria"
-                   />
-                 </li>
-                 <li>
-                   <img
-                     src="http://play.pokemonshowdown.com/sprites/ani/kabutops.gif"
-                     alt="altaria"
-                   />
-                 </li>
-                 <li>
-                   <img
-                     src="http://play.pokemonshowdown.com/sprites/ani/umbreon.gif"
-                     alt="altaria"
-                   />
-                 </li>
-                 <li>
-                   <img
-                     src="http://play.pokemonshowdown.com/sprites/ani/espeon.gif"
-                     alt="altaria"
-                   />
-                 </li>
-                 <li>
-                   <img
-                     src="http://play.pokemonshowdown.com/sprites/ani/snorlax.gif"
-                     alt="altaria"
-                   />
-                 </li>
-               </ul>
-             </div>
-             <div>
-               <ul>
-                 <li>
-                   <img
-                     id="avatar"
-                     src={comp.avatar.url}
-                     alt={comp.title.rendered}
-                   />
-                 </li>
-                 <li>
-                   <img
-                     src={`http://play.pokemonshowdown.com/sprites/ani/${comp.pokemon1}.gif`}
-                     alt="altaria"
-                     
-                   />
-                 </li>
-                 <li>
-                   <img
-                     src={`http://play.pokemonshowdown.com/sprites/ani/${comp.pokemon2}.gif`}
-                     alt="altaria"
-                   />
-                 </li>
-                 <li>
-                   <img
-                     src={`http://play.pokemonshowdown.com/sprites/ani/${comp.pokemon3}.gif`}
-                     alt="altaria"
-                   />
-                 </li>
-                 <li>
-                   <img
-                     src={`http://play.pokemonshowdown.com/sprites/ani/${comp.pokemon4}.gif`}
-                     alt="altaria"
-                   />
-                 </li>
-                 <li>
-                   <img
-                     src={`http://play.pokemonshowdown.com/sprites/ani/${comp.pokemon5}.gif`}
-                     alt="altaria"
-                   />
-                 </li>
-                 <li>
-                   <img
-                     src={`http://play.pokemonshowdown.com/sprites/ani/${comp.pokemon6}.gif`}
-                     alt="altaria"
-                   />
-                 </li>
-               </ul>
-             </div>
-           </div>
-         </div>
+          <div id="containerteam" key={comp.id}>
+            <div id="teambox">
+              <div>
+                <ul>
+                  <li>
+                    <img
+                      id="avatar"
+                      src={comp.avatar.url}
+                      alt={comp.title.rendered}
+                    />
+                  </li>
+                  <li>
+                    <a href={`https://www.smogon.com/dex/dp/pokemon/${comp.pokemon1}`} target="_blank">
+                      <img
+                        src={`http://play.pokemonshowdown.com/sprites/ani/${comp.pokemon1}.gif`}
+                        alt={comp.pokemon1}
+                      />
+                    </a>
+                  </li>
+                  <li>
+                  <a href={`https://www.smogon.com/dex/dp/pokemon/${comp.pokemon2}`} target="_blank">
+                      <img
+                        src={`http://play.pokemonshowdown.com/sprites/ani/${comp.pokemon2}.gif`}
+                        alt={comp.pokemon1}
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <img
+                      src={`http://play.pokemonshowdown.com/sprites/ani/${comp.pokemon3}.gif`}
+                      alt={comp.pokemon3}
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src={`http://play.pokemonshowdown.com/sprites/ani/${comp.pokemon4}.gif`}
+                      alt={comp.pokemon4}
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src={`http://play.pokemonshowdown.com/sprites/ani/${comp.pokemon5}.gif`}
+                      alt={comp.pokemon5}
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src={`http://play.pokemonshowdown.com/sprites/ani/${comp.pokemon6}.gif`}
+                      alt={comp.pokemon6}
+                    />
+                  </li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <img
+                      id="avatar"
+                      src={comp.avatar.url}
+                      alt={comp.title.rendered}
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src={`http://play.pokemonshowdown.com/sprites/ani/${comp.pokemon1}.gif`}
+                      alt={comp.pokemon1}
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src={`http://play.pokemonshowdown.com/sprites/ani/${comp.pokemon2}.gif`}
+                      alt={comp.pokemon2}
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src={`http://play.pokemonshowdown.com/sprites/ani/${comp.pokemon3}.gif`}
+                      alt={comp.pokemon3}
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src={`http://play.pokemonshowdown.com/sprites/ani/${comp.pokemon4}.gif`}
+                      alt={comp.pokemon4}
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src={`http://play.pokemonshowdown.com/sprites/ani/${comp.pokemon5}.gif`}
+                      alt={comp.pokemon5}
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src={`http://play.pokemonshowdown.com/sprites/ani/${comp.pokemon6}.gif`}
+                      alt={comp.pokemon6}
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         ))}
-       
       </Container>
     </>
   );
