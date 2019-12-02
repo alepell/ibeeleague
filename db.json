@@ -1,0 +1,29 @@
+[
+    {
+      "id": 1,
+      "titulo": "Time A",
+      "jogadores": [
+        {
+          "avatar": "http://laranjeiraflor.com.br/wp-content/uploads/2019/09/umbreon.jpg",
+          "nome": "nome",
+          "pokemon1": "pikachu",
+          "pokemon2": "pikachu",
+          "pokemon3": "pikachu",
+          "pokemon4": "pikachu",
+          "pokemon5": "pikachu",
+          "pokemon6": "pikachu"
+        },
+        {
+          "avatar": "http://laranjeiraflor.com.br/wp-content/uploads/2019/09/image-23.png",
+          "nome": "nome",
+          "pokemon1": "charmander",
+          "pokemon2": "charmander",
+          "pokemon3": "charmander",
+          "pokemon4": "charmander",
+          "pokemon5": "charmander",
+          "pokemon6": "charmander"
+        }
+      ]
+    }
+  }
+

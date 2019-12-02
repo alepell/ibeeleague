@@ -9,7 +9,7 @@ export default function Home() {
   useEffect(() => {
     async function fetchData() {
       const response = await fetch(
-        "http://laranjeiraflor.com.br/wp-json/wp/v2/competidores"
+        "http://laranjeiraflor.com.br/wp-json/pokemon/duplas"
       );
       const data = await response.json();
       setCompetidores(data);
@@ -31,60 +31,61 @@ export default function Home() {
 
       <Container>
         <p>Tag Teams</p>
-
-        <div id="containerteam">
-          {competidores.map(jogador => (
-            <div id="teambox" key={jogador.id}>
-              <div>
-                <ul>
-                  <li>
-                    <img
-                      id="avatar"
-                      src={jogador.avatar.url}
-                      alt={jogador.nome_jogador}
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src={`http://play.pokemonshowdown.com/sprites/ani/${jogador.pokemon1}.gif`}
-                      alt={jogador.pokemon1}
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src={`http://play.pokemonshowdown.com/sprites/ani/${jogador.pokemon2}.gif`}
-                      alt={jogador.pokemon1}
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src={`http://play.pokemonshowdown.com/sprites/ani/${jogador.pokemon3}.gif`}
-                      alt={jogador.pokemon3}
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src={`http://play.pokemonshowdown.com/sprites/ani/${jogador.pokemon4}.gif`}
-                      alt={jogador.pokemon4}
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src={`http://play.pokemonshowdown.com/sprites/ani/${jogador.pokemon5}.gif`}
-                      alt={jogador.pokemon5}
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src={`http://play.pokemonshowdown.com/sprites/ani/${jogador.pokemon6}.gif`}
-                      alt={jogador.pokemon6}
-                    />
-                  </li>
-                </ul>
+        {competidores.map(time => {
+          return time.jogadores.map(jogador => (
+            <div id="containerteam">
+              <div id="teambox">
+                <div>
+                  <ul key={jogador.id}>
+                    <li>
+                      <img
+                        id="avatar"
+                        src={jogador.avatar}
+                        alt={jogador.nome_jogador}
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src={`http://play.pokemonshowdown.com/sprites/ani/${jogador.pokemon1}.gif`}
+                        alt={jogador.pokemon1}
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src={`http://play.pokemonshowdown.com/sprites/ani/${jogador.pokemon2}.gif`}
+                        alt={jogador.pokemon2}
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src={`http://play.pokemonshowdown.com/sprites/ani/${jogador.pokemon3}.gif`}
+                        alt={jogador.pokemon3}
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src={`http://play.pokemonshowdown.com/sprites/ani/${jogador.pokemon4}.gif`}
+                        alt={jogador.pokemon4}
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src={`http://play.pokemonshowdown.com/sprites/ani/${jogador.pokemon5}.gif`}
+                        alt={jogador.pokemon5}
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src={`http://play.pokemonshowdown.com/sprites/ani/${jogador.pokemon6}.gif`}
+                        alt={jogador.pokemon6}
+                      />
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          ))}
-        </div>
+          ));
+        })}
       </Container>
     </>
   );
