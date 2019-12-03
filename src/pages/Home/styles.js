@@ -39,6 +39,69 @@ export const Header = styled.header`
     width: 100px;
     margin-left: -8%;
   }
+
+  @media(max-width: 1024px) {
+    ul {
+      margin-left: 10%;
+    }
+  }
+
+  @media(max-width: 900px) {
+    ul {
+      margin-left: -5%;
+    }
+  }
+
+  @media(max-width: 780px) {
+    p {
+      font-size: 2.9rem;
+    }
+  }
+
+  @media(max-width: 580px) {
+    p {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media(max-width: 480px) {
+    #beedrill {
+      display: none;
+    }
+    p {
+      margin-left: 10px;
+    }
+  }
+
+  @media(max-width: 380px) {
+    p {
+      font-size: 1.5rem;
+      
+    }
+
+    #beedrill {
+      width: 50px;
+    }
+
+  }
+
+  @media(max-width: 380px) {
+    p {
+      font-size: 1.5rem;
+      margin-left: 15px;
+    }
+
+    ul {
+      li {
+        font-size: 0.8rem;
+      }
+    }
+
+    #beedrill {
+      display: none;
+    }
+
+  }
 `;
 
 export const Container = styled.div`
@@ -99,4 +162,124 @@ export const Container = styled.div`
       }
     }
   }
+
+  @media(max-width: 1024px) {
+    #teambox {
+      width: 70%;
+    }
+  }
+  @media(max-width: 900px) {
+    #teambox {
+      width: 80%;
+    }
+  }
+  @media(max-width: 780px) {
+    #avatar {
+      width: 60px !important;
+      height: 60px !important;
+    }
+
+    #teambox {
+      img {
+        width: 45px;
+        height: 45px;
+      }
+    }
+  }
+
+  @media(max-width: 640px) {
+    #avatar {
+      width: 60px !important;
+      height: 60px !important;
+    }
+    #teambox {
+      img {
+        width: 45px;
+        height: 45px;
+      }
+    }
+
+  }
+
+  @media(max-width: 580px) {
+    #avatar {
+      width: 55px !important;
+      height: 55px !important;
+    }
+    #teambox {
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+  }
+
+  @media(max-width: 480px) {
+    #avatar {
+      width: 50px !important;
+      height: 50px !important;
+    }
+    #teambox {
+      img {
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+  }
+
+  @media(max-width: 414px) {
+    #avatar {
+      width: 40px !important;
+      height: 40px !important;
+    }
+    #teambox {
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+  }
+
+  @media(max-width: 380px) {
+    #avatar {
+      width: 35px !important;
+      height: 35px !important;
+    }
+    #teambox {
+      img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+
+    p {
+      font-size: 1rem;
+      padding-top: 10px;
+    }
+
+  }
+
+  @media(max-width: 380px) {
+    #avatar {
+      width: 30px !important;
+      height: 30px !important;
+    }
+    #teambox {
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    p {
+      font-size: 1rem;
+      padding-top: 10px;
+    }
+
+  }
+
+  
 `;
