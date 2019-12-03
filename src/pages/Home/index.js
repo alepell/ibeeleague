@@ -33,10 +33,10 @@ export default function Home() {
         <p>Tag Teams</p>
         {competidores.map(time => {
           return time.jogadores.map(jogador => (
-            <div id="containerteam">
-              <div id="teambox">
+            <div id="containerteam" key={jogador.nome_jogador}>
+              <div id="teambox" key={jogador.nome_jogador}>
                 <div>
-                  <ul key={jogador.id}>
+                  <ul key={jogador.nome_jogador} >
                     <li>
                       <img
                         id="avatar"
