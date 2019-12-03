@@ -222,8 +222,8 @@ export const Container = styled.div`
     }
     #teambox {
       img {
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
       }
     }
 
@@ -239,20 +239,23 @@ export const Container = styled.div`
         width: 30px;
         height: 30px;
       }
+
+      width: 85%;
     }
 
   }
 
-  @media(max-width: 380px) {
+  @media(max-width: 390px) {
     #avatar {
-      width: 35px !important;
-      height: 35px !important;
+      width: 45px !important;
+      height: 45px !important;
     }
     #teambox {
       img {
-        width: 25px;
-        height: 25px;
+        width: 25px !important;
+        height: 25px !important;
       }
+      width: 90%;
     }
 
     p {
@@ -262,15 +265,15 @@ export const Container = styled.div`
 
   }
 
-  @media(max-width: 380px) {
+  @media(max-width: 320px) {
     #avatar {
-      width: 30px !important;
-      height: 30px !important;
+      width: 35px !important;
+      height: 35px !important;
     }
     #teambox {
       img {
-        width: 20px;
-        height: 20px;
+        width: 20px !important;
+        height: 20px !important;
       }
     }
 
