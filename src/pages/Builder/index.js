@@ -7,6 +7,7 @@ import * as Yup from "yup";
 import axios from "axios";
 
 const schema = Yup.object().shape({
+  avatar_id: Yup.number().required('avatar obrigatorio'),
   name: Yup.string().required("seu nick é obrigatorio*"),
   pokename1: Yup.string().required("pokemon1 obrigatorio*"),
   pokename2: Yup.string().required("pokemon2 obrigatorio*"),
@@ -20,8 +21,7 @@ const schema = Yup.object().shape({
 export default function Builder() {
 
   function handleSubmit(data) {
-    console.log(data);
-    return;
+
     try {
       axios.post("http://localhost:3333/build", data).then(() => {
         toast.success("Jogador criado com sucesso!");
@@ -29,6 +29,7 @@ export default function Builder() {
     } catch (error) {
       return console.log(error);
     }
+   
   }
 
   return (

@@ -30,7 +30,7 @@ export default function AvatarInput() {
     const response = await axios.post("http://localhost:3333/files", data);
 
     const { id, url } = response.data;
-
+    
     setPreview(url);
     setFile(id);
   }
