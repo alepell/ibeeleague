@@ -7,6 +7,16 @@ export const Header = styled.header`
   justify-content: space-evenly;
   margin-top: 1%;
   margin-bottom: 2%;
+  .link {
+    text-decoration: none !important;
+    color: #fff;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      color: black;
+      transition: all 0.3s ease;
+    }
+  }
 
   p {
     font-family: "Roboto", sans-serif;
@@ -40,31 +50,31 @@ export const Header = styled.header`
     margin-left: -8%;
   }
 
-  @media(max-width: 1024px) {
+  @media (max-width: 1024px) {
     ul {
       margin-left: 10%;
     }
   }
 
-  @media(max-width: 900px) {
+  @media (max-width: 900px) {
     ul {
       margin-left: -5%;
     }
   }
 
-  @media(max-width: 780px) {
+  @media (max-width: 780px) {
     p {
       font-size: 2.9rem;
     }
   }
 
-  @media(max-width: 580px) {
+  @media (max-width: 580px) {
     p {
       font-size: 2.5rem;
     }
   }
 
-  @media(max-width: 480px) {
+  @media (max-width: 480px) {
     #beedrill {
       display: none;
     }
@@ -73,19 +83,17 @@ export const Header = styled.header`
     }
   }
 
-  @media(max-width: 380px) {
+  @media (max-width: 380px) {
     p {
       font-size: 1.5rem;
-      
     }
 
     #beedrill {
       width: 50px;
     }
-
   }
 
-  @media(max-width: 380px) {
+  @media (max-width: 380px) {
     p {
       font-size: 1.5rem;
       margin-left: 15px;
@@ -100,7 +108,6 @@ export const Header = styled.header`
     #beedrill {
       display: none;
     }
-
   }
 `;
 
@@ -163,17 +170,17 @@ export const Container = styled.div`
     }
   }
 
-  @media(max-width: 1024px) {
+  @media (max-width: 1024px) {
     #teambox {
       width: 70%;
     }
   }
-  @media(max-width: 900px) {
+  @media (max-width: 900px) {
     #teambox {
       width: 80%;
     }
   }
-  @media(max-width: 780px) {
+  @media (max-width: 780px) {
     #avatar {
       width: 60px !important;
       height: 60px !important;
@@ -187,7 +194,7 @@ export const Container = styled.div`
     }
   }
 
-  @media(max-width: 640px) {
+  @media (max-width: 640px) {
     #avatar {
       width: 60px !important;
       height: 60px !important;
@@ -198,10 +205,9 @@ export const Container = styled.div`
         height: 45px;
       }
     }
-
   }
 
-  @media(max-width: 580px) {
+  @media (max-width: 580px) {
     #avatar {
       width: 55px !important;
       height: 55px !important;
@@ -212,10 +218,9 @@ export const Container = styled.div`
         height: 40px;
       }
     }
-
   }
 
-  @media(max-width: 480px) {
+  @media (max-width: 480px) {
     #avatar {
       width: 50px !important;
       height: 50px !important;
@@ -226,10 +231,9 @@ export const Container = styled.div`
         height: 30px;
       }
     }
-
   }
 
-  @media(max-width: 414px) {
+  @media (max-width: 414px) {
     #avatar {
       width: 40px !important;
       height: 40px !important;
@@ -242,10 +246,9 @@ export const Container = styled.div`
 
       width: 85%;
     }
-
   }
 
-  @media(max-width: 390px) {
+  @media (max-width: 390px) {
     #avatar {
       width: 45px !important;
       height: 45px !important;
@@ -262,10 +265,9 @@ export const Container = styled.div`
       font-size: 1rem;
       padding-top: 10px;
     }
-
   }
 
-  @media(max-width: 320px) {
+  @media (max-width: 320px) {
     #avatar {
       width: 35px !important;
       height: 35px !important;
@@ -281,8 +283,5 @@ export const Container = styled.div`
       font-size: 1rem;
       padding-top: 10px;
     }
-
   }
-
-  
 `;
